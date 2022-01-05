@@ -59,6 +59,9 @@ We followed the same procedure stated in [1] to perform manual instance segmenta
 ## Manual ambiguous area annotation with ImageJ
 Besides annotating nuclei in the images, we also annotated the ambiguous regions where performing accurate and reliable nuclei segmentation was impossible to even for human experts. The same procedure as above was applied to delineate the fuzzy areas in the images.
 
+An example of a vague area in an image is shown below (left original image and right delineated vague areas in white): 
+![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/vague%20example.png)
+
 ## Codes to generate segmentation masks
 A Matlab function to generate segmentation masks from the ImageJ ROI files is located in the code folder.
 By running the function, the following segmentation masks will be created:
