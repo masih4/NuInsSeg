@@ -2,6 +2,9 @@
 
 This repository contains instructions and codes to create the NuInsSeg dataset, one of the largest publicly available datasets of segmented nuclei in H&amp;E-Stained Histological Images. 
 
+![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/segmentation%20sample.jpg)
+
+
 ## Table of Contents 
 [Citation](#citation)
 
