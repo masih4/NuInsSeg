@@ -70,7 +70,7 @@ By running the function, the following segmentation masks will be created:
 - weighted_maps_erode: show weighted maps where higher intensity values were given to the touching borders. These masks were created from the "mask binary without border erode" folder
 
 ## Acknowledgements
-This work was supported by the Austrian Research Promotion Agency (FFG),<a href="https://projekte.ffg.at/projekt/3258628"> No. 872636</a> as part of <a href="https://projekte.ffg.at/projekt/3258628"> Deep Learning-based knowledge transfer methods for nuclei segmentation in microscopic images</a> project. 
+This work was supported by the Austrian Research Promotion Agency (FFG),<a href="https://projekte.ffg.at/projekt/3258628"> No. 872636</a> as part of <a href="https://sites.google.com/view/deepnucleidetection/home"> Deep Learning-based knowledge transfer methods for nuclei segmentation in microscopic images</a> project. 
 
 
 ## Refrences
