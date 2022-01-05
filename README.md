@@ -39,9 +39,11 @@ We followed the general procedure stated below for sample preparation and scanni
 ![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/prepration.png)
 
 ## WSI Selection
-We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner and stored in the institutional repository. The images contain both human and mouse organs. With the help of a senior biologist (Prof. Isabella Ellinger), we chose 665 image patches with a fixed size of 512x512 pixels from 31 mouse and human organs. More details and statistics about the image patches can be found in our manuscript. 
+We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner from Tissuegnostics GmbH and stored in the institutional repository. The images contain both human and mouse organs. In total, we selected 31 WSIs to form our dataset. WSI selection was performed by Prof. Isabella Ellinger (senior biologist) to cover a large variety of colour schemes derived by H&E staining for different human and mouse organs and tissues.  
+
 
 ## WSI patch extraction
+The formation of WSIs in the used scanner system was based on snitching image patches with a fixed size of 2048x2048 pixels (i.e. scanning was performed in several steps which, in each step, a part of tissue/organ was scanned and stored as a 2048x2048 image). With the help of Prof. Isabella Ellinger, we went through these image patches and selected 665 images which were cropped to 512x512 pixels. More details and statistics about the image patches can be found in our manuscript. 
 
 ## Manual nuclei annotation with ImageJ
 We followed the same procedure stated in [1] to perform manual instance segmentation:
