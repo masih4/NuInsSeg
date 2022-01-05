@@ -1,2 +1,74 @@
-# NuInsSeg
-NuInsSeg: A Fully Annotated Dataset for Nuclei Instance Segmentation in H&amp;E-Stained Histological Images
+# NuInsSeg:  A Fully Annotated Dataset for Nuclei Instance Segmentation in H&amp;E-Stained Histological Images
+
+This repository contains instructions and codes to create the NuInsSeg dataset, one of the largest publicly available datasets of segmented nuclei in H&amp;E-Stained Histological Images. 
+
+## Table of Contents 
+[Citation](#citation)
+
+[Link to full dataset](#link-to-full-dataset)
+
+[Sample prepartion and scanning](#sample-prepartion-and-scanning)
+
+[WSI selection](#wsi-selection)
+
+[Image patch extraction](#image-patch-extraction)
+
+[Manual nuclei annotation with ImageJ](#manual-nuclei-annotation-with-imagej)
+
+[Manual ambiguous area annotation with ImageJ](#manual-ambiguous-area-annotation-with-imagej)
+
+[Codes to generate segmentation masks](#codes-to-generate-segmentation-masks)
+
+[Acknowledgements](#acknowledgements)
+
+[Refrences](#refrences)
+
+## Citation
+A descriptive manuscript explaining our dataset is submitted to the Nature Scientific Data Journal and currently is under review. This section will be updated soon.
+
+## Link to full dataset
+Our full dataset, including raw image patches, raw ImageJ ROI files, segmentation masks, and ambiguous masks is available on the Kaggle platform at (link will be added here)
+
+## Sample prepartion and scanning
+We followed the general procedure stated below for sample preparation and scanning. A descriptive explanation of each part is available in our manuscript.  
+
+## WSI Selection
+We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner and stored in the institutional repository. The images contain both human and mouse organs. With the help of a senior biologist (Prof. Isabella Ellinger), we chose 665 image patches with a fixed size of 512x512 pixels from 31 mouse and human organs. More details and statistics about the image patches can be found in our manuscript. 
+
+## WSI patch extraction
+
+## Manual nuclei annotation with ImageJ
+We followed the same procedure stated in [1] to perform manual instance segmentation:
+- Open an image with the ImageJ software
+- From tabs:  Analyse --> Tools --> ROI manager. Make sure that both "show all" and "labels" are activated in the ROI manager. 
+- Zoom in/out to have a clear view of the image and all instances
+- From the selection options, select "freehand selection"
+- Manually annotate the border for each object and press "T". To remove an object select the labelled number inside the object and then press "Delete"
+- To remove an ROI 
+- When you are done with all nuclei, save the outputs with ROI manager--> More --> Save
+- A zip file containing a number of ROI files will be created after saving the outputs (each ROI file represent one of the nucleus) 
+
+## Manual ambiguous area annotation with ImageJ
+Besides annotating nuclei in the images, we also annotated the ambiguous regions where performing accurate and reliable nuclei segmentation was impossible to even for human experts. The same procedure as above was applied to delineate the fuzzy areas in the images.
+
+## Codes to generate segmentation masks
+A Matlab function to generate segmentation masks from the ImageJ ROI files is located in the code folder.
+By running the function, the following segmentation masks will be created:
+- Distance maps: show the distance transform of all nuclei in a given image.
+- label masks: show the labelled masks of the nuclei where each instance is labelled with a unique number. for the overlapping nuclei, the overlapped region has a new numerical value
+- label masks modify: show the labelled masks of the nuclei where each instance is labelled with a unique number. for the overlapping nuclei, the overlapped region is assigned to one of the instances (the labelled masks in this folder should be used for evaluation)
+- mask binary: contained the binary masks where the background has the label "0" and foreground has the label "1"
+- mask binary without border: contained the binary masks where the background has the label "0" and foreground has the label "1". For a better distinction between touching nuclei, the touching borders were removed in the masks provided in this folder.
+- mask binary without border erode: same as above (mask binary without border), but the instances were eroded for even better distinction between objects.
+- overlay_save_path: visualization of the nuclei overlaid on the raw image patches.
+- stacked mask: contains 3D mat files. Each layer of the 3D mat file shows one of the instances.
+- weighted_maps: show weighted maps where higher intensity values were given to the touching borders. These masks were created from the "mask binary without border" folder
+- weighted_maps_erode: show weighted maps where higher intensity values were given to the touching borders. These masks were created from the "mask binary without border erode" folder
+
+## Acknowledgements
+This work was supported by the Austrian Research Promotion Agency (FFG),<a href="https://projekte.ffg.at/projekt/3258628"> No. 872636</a> as part of <a href="https://projekte.ffg.at/projekt/3258628"> Deep Learning-based knowledge transfer methods for nuclei segmentation in microscopic images</a> project. 
+
+
+## Refrences
+[1] Mahbod A, Schaefer G, Bancher B, Löw C, Dorffner G, Ecker R, Ellinger I. CryoNuSeg: A dataset for nuclei instance segmentation of cryosectioned H&E-stained histological images. Computers in Biology and Medicine. 2021 May 1;132:104349.
+
