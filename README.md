@@ -31,6 +31,7 @@ Our full dataset, including raw image patches, raw ImageJ ROI files, segmentatio
 
 ## Sample prepartion and scanning
 We followed the general procedure stated below for sample preparation and scanning. A descriptive explanation of each part is available in our manuscript.  
+![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/prepration.png)
 
 ## WSI Selection
 We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner and stored in the institutional repository. The images contain both human and mouse organs. With the help of a senior biologist (Prof. Isabella Ellinger), we chose 665 image patches with a fixed size of 512x512 pixels from 31 mouse and human organs. More details and statistics about the image patches can be found in our manuscript. 
