@@ -24,6 +24,9 @@ This repository contains instructions and codes to create the NuInsSeg dataset, 
 
 [Codes to generate segmentation masks](#codes-to-generate-segmentation-masks)
 
+[Data split to five folds](#data-split-to-five-folds)
+
+
 [Acknowledgements](#acknowledgements)
 
 [Refrences](#refrences)
@@ -75,6 +78,14 @@ By running the function, the following segmentation masks will be created:
 - stacked mask: contains 3D mat files. Each layer of the 3D mat file shows one of the instances.
 - weighted_maps: show weighted maps where higher intensity values were given to the touching borders. These masks were created from the "mask binary without border" folder
 - weighted_maps_erode: show weighted maps where higher intensity values were given to the touching borders. These masks were created from the "mask binary without border erode" folder
+
+## Data split to five folds
+To train/test the model, we recommend using the following 5-fold cross-validation scheme to be able to compare your results with the baseline segmentation results: 
+```
+from sklearn.model_selection import KFold,StratifiedKFold 
+kf = KFold(n_splits= 5,random_state= 19, shuffle=True) 
+kf.get_n_splits("path_to_dataset_images")
+```
 
 ## Acknowledgements
 This work was supported by the Austrian Research Promotion Agency (FFG),<a href="https://projekte.ffg.at/projekt/3258628"> No. 872636</a> as part of <a href="https://sites.google.com/view/deepnucleidetection/home"> Deep Learning-based knowledge transfer methods for nuclei segmentation in microscopic images</a> project. 
