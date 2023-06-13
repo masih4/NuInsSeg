@@ -32,7 +32,7 @@ This repository contains instructions and codes to create the NuInsSeg dataset, 
 A descriptive manuscript explaining our dataset is submitted to the Nature Scientific Data Journal and currently is under review. This section will be updated soon.
 
 ## Link to full dataset
-Our full dataset, including raw image patches, raw ImageJ ROI files, segmentation masks, and ambiguous masks is available on the Kaggle platform at (link will be added here)
+Our full dataset, including raw image patches, raw ImageJ ROI files, segmentation masks, and ambiguous masks is available on the Kaggle platform at: https://www.kaggle.com/datasets/ipateam/nuinsseg
 
 ## Sample prepartion and scanning
 We followed the general procedure stated below for sample preparation and scanning. A descriptive explanation of each part is available in our manuscript.  
