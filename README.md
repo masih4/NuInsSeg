@@ -39,7 +39,7 @@ We followed the general procedure stated below for sample preparation and scanni
 ![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/prepration.png)
 
 ## WSI Selection
-We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner from Tissuegnostics GmbH and stored in the institutional repository. The images contain both human and mouse organs. In total, we selected 31 WSIs to form our dataset. WSI selection was performed by Prof. Isabella Ellinger (senior biologist) to cover a large variety of colour schemes derived by H&E staining for different human and mouse organs and tissues.  
+We used available scanned WSI images at the Institute for Pathophysiology and Allergy Research at the Medical University of Vienna as our dataset source. All WSIs were scanned with a unique digital scanner from Tissuegnostics GmbH and stored in the institutional repository. The images contain both human and mouse organs. In total, we selected 31 whole slide images (WSI) to form our dataset. WSI and FOV selection were performed by Prof. Isabella Ellinger (senior biologist) to cover a large variety of H&E staining for different human and mouse organs and tissues.  
 
 
 ## WSI patch extraction
