@@ -5,6 +5,14 @@
 This repository contains instructions and codes to create the NuInsSeg dataset, one of the largest publicly available datasets of segmented nuclei in H&amp;E-Stained Histological Images. 
 
 ![Project Image](https://github.com/masih4/NuInsSeg/blob/main/git%20images/segmentation%20sample.jpg)
+NuInsSeg consisted of image patches from 31 human and mouse organs:
+
+Human organs:
+`cerebellum, cerebrum (brain), colon (rectum), epiglottis, jejunum, kidney, liver, lung, melanoma, muscle, oesophagus, palatine tonsil, pancreas, peritoneum, placenta, salivary gland, spleen, stomach (cardia), stomach (pylorus), testis, tongue, umbilical cord, and urinary bladder
+`
+
+Mouse organs:
+`cerebellum, cerebrum, colon, epiglottis, lung, melanoma, muscle, peritoneum, stomach (cardia), stomach (pylorus), testis, umbilical cord, and urinary bladder)`
 
 
 ## Table of Contents 
