@@ -24,8 +24,6 @@ Mouse organs:
 
 [WSI selection](#wsi-selection)
 
-[Image patch extraction](#image-patch-extraction)
-
 [Manual nuclei annotation with ImageJ](#manual-nuclei-annotation-with-imagej)
 
 [Manual ambiguous area annotation with ImageJ](#manual-ambiguous-area-annotation-with-imagej)
@@ -40,7 +38,16 @@ Mouse organs:
 [Refrences](#refrences)
 
 ## Citation
-A descriptive manuscript explaining our dataset is submitted to the Nature Scientific Data Journal and currently is under review. This section will be updated soon.
+A descriptive manuscript explaining our dataset has been submitted to the Nature Scientific Data Journal and is currently under review. The preprint is available on arXiv:
+```
+@article{mahbod2023nuinsseg,
+  title={NuInsSeg: A Fully Annotated Dataset for Nuclei Instance Segmentation in H\&E-Stained Histological Images},
+  author={Mahbod, Amirreza and Polak, Christine and Feldmann, Katharina and Khan, Rumsha and Gelles, Katharina and Dorffner, Georg and Woitek, Ramona and 
+          Hatamikia, Sepideh and Ellinger, Isabella},
+  journal={arXiv preprint arXiv:2308.01760},
+  year={2023}
+}
+```
 
 ## Link to full dataset
 Our full dataset, including raw image patches, raw ImageJ ROI files, segmentation masks, and ambiguous masks is available on the Kaggle platform at: https://www.kaggle.com/datasets/ipateam/nuinsseg
