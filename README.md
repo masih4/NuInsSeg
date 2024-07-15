@@ -38,7 +38,7 @@ Mouse organs:
 [Refrences](#refrences)
 
 ## Citation
-A descriptive manuscript explaining our dataset has been submitted to the Nature Scientific Data Journal and is currently under review. The preprint is available on arXiv:
+
 ```
 @Article{Mahbod2024,
 author={Mahbod, Amirreza
