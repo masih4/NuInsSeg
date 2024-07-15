@@ -40,12 +40,27 @@ Mouse organs:
 ## Citation
 A descriptive manuscript explaining our dataset has been submitted to the Nature Scientific Data Journal and is currently under review. The preprint is available on arXiv:
 ```
-@article{mahbod2023nuinsseg,
-  title={NuInsSeg: A Fully Annotated Dataset for Nuclei Instance Segmentation in H\&E-Stained Histological Images},
-  author={Mahbod, Amirreza and Polak, Christine and Feldmann, Katharina and Khan, Rumsha and Gelles, Katharina and Dorffner, Georg and Woitek, Ramona and 
-          Hatamikia, Sepideh and Ellinger, Isabella},
-  journal={arXiv preprint arXiv:2308.01760},
-  year={2023}
+@Article{Mahbod2024,
+author={Mahbod, Amirreza
+and Polak, Christine
+and Feldmann, Katharina
+and Khan, Rumsha
+and Gelles, Katharina
+and Dorffner, Georg
+and Woitek, Ramona
+and Hatamikia, Sepideh
+and Ellinger, Isabella},
+title={NuInsSeg: A fully annotated dataset for nuclei instance segmentation in H{\&}E-stained histological images},
+journal={Scientific Data},
+year={2024},
+month={Mar},
+day={14},
+volume={11},
+number={1},
+pages={295},
+issn={2052-4463},
+doi={10.1038/s41597-024-03117-2},
+url={https://doi.org/10.1038/s41597-024-03117-2}
 }
 ```
 
